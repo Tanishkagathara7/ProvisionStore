@@ -17,7 +17,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "backend": "cd backend && node server.js",
+    "backend-dev": "cd backend && npm run dev",
+    "backend-install": "cd backend && npm install",
+    "dev:fullstack": "concurrently \"npm run backend\" \"npm start\"",
+    "postinstall": "cd backend && npm install"
   },
   "eslintConfig": {
     "extends": [
